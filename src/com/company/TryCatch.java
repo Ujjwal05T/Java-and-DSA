@@ -34,5 +34,8 @@ public class TryCatch {
         catch (Exception e){
             System.out.println(e);
         }
+        finally {
+            System.out.println("This will always execute");
+        }
     }
 }
