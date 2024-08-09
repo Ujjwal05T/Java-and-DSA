@@ -20,7 +20,7 @@ import java.util.Scanner;
 //            a=b;
 //            b=c;
 //        }
-        if(n<=1){
+        if(n<=1){                   //using recursion
             return n;
         }else {
             return fibonacci(n-1) + fibonacci(n-2);

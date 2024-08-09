@@ -1,6 +1,6 @@
 package com.company;
 class Box{
-    int a;
+    int a=6;
     Box(int a){
         this.a=a;
     }
@@ -10,9 +10,10 @@ class Box{
 }
 public class CopyConstructor {
     public static void main(String[] args) {
-        Box a = new Box(3);
-        Box b = new Box(a); //passing already created object in constructor
-        System.out.println(a.a);
+        Box c = new Box(5);
+        Box b = new Box(c); //passing already created object in constructor
+
+        System.out.println(c.a);
         System.out.println(b.a);
     }
 }
