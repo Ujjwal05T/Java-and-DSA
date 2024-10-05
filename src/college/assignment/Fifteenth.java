@@ -1,7 +1,5 @@
     package college.assignment;
 
-    import java.util.Scanner;
-
     public class Fifteenth {
         public static void main(String[] args) {
             int [] arr = {10,500,500,363,400,2};
@@ -17,7 +15,7 @@
                     secMax=arr[i];
                 }
             }
-           // System.out.println(max);
+
             System.out.println("Second Largest element of given array is "+secMax);
         }
     }

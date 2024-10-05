@@ -22,7 +22,7 @@ public class TryCatch {
         int i = sc.nextInt();
         int num = sc.nextInt();
         try{
-            System.out.println(arr[i]);
+//            System.out.println(arr[i]);
             System.out.println(arr[i]/num);
         }
         catch(ArithmeticException e){

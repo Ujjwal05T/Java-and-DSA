@@ -11,6 +11,7 @@ class Box{
 public class CopyConstructor {
     public static void main(String[] args) {
         Box c = new Box(5);
+        c=new Box(9);
         Box b = new Box(c); //passing already created object in constructor
 
         System.out.println(c.a);
