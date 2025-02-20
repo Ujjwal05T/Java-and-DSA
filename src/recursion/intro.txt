@@ -1,0 +1,20 @@
+When a function is recursively calls itself then this function is called recursive function and this process is called recursion.
+
+We have to put a condition where recursion stops.This condition is called base condition.
+
+Every time recursive function calls itself it will take memory in stack memory.
+
+If we do not put base condition then function will run infinitely and will give stack overflow error.
+
+Why Recursion ?
+
+=> It helps us in solving bigger problems in simpler way.We can convert recursive solution to iterative solution and vice versa.
+   It helps in breaking down bigger problems into smaller problems.
+
+
+When we write recursion in the formula it is called recurrence relation.
+
+The base condition is represented by answers we already know.
+
+When last step in a function is recursive call then it is called tail recursion.
+

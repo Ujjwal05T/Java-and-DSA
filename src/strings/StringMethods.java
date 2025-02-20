@@ -7,6 +7,7 @@ public class StringMethods {
         String name = "Monkey D. Luffy";
 //        System.out.println(Arrays.toString(name.toCharArray()));
         System.out.println(name.toUpperCase());
+        System.out.println();
         //try yourself some more methods
     }
 }
