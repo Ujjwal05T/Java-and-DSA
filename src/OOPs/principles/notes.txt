@@ -1,0 +1,70 @@
+Four Principles of OOPs
+
+1. Encapsulation
+2. Abstraction
+3. Inheritance
+4. Polymorphism
+
+Inheritance
+Using inheritance we can use properties and methods of one class in another class.
+We can use extends keyword to inherit a class.
+Child class can access all the properties and methods of parent class.
+
+We can not access private members of parent class in child class.
+
+Super keyword is used to access parent class members.
+super points to parent class that is directly above the child class.
+super is used to call parent class constructor
+super is used to access parent class members like methods and variables.
+If we are making a constructor in child class then we need to call parent class constructor first.
+
+Types of Inheritance
+1. Single Inheritance:Normal one
+2. Multilevel Inheritance:one extends another and that extends another
+3. Multiple Inheritance:one class extends multiple classes that is not allowed in java, but it can be achieved using interfaces
+4. Hierarchical Inheritance:one parent class and multiple child classes
+5. Hybrid Inheritance:combination of multiple and hierarchical inheritance;also not allowed in java,but can be achieved using interfaces
+Ex. A class extends B and C, and B and C extends D
+
+Polymorphism (One entity in multiple forms)
+Polymorphism is the ability of an object to take on many forms.
+There are two types of polymorphism:
+1. Compile time/static polymorphism:Achieved by Method overloading
+2. Runtime/dynamic polymorphism:Achieved by Method overriding
+
+Method Overloading
+When two or more methods in the same class have the same name but different parameters or return type(also order of parameters if they are of different types), it is called method overloading.
+Example: Constructor overloading
+
+Method Overriding
+When a child class has the same method as parent class, it is called method overriding.
+When we override a method, we can use super keyword to call the parent class method.
+
+Dynamic Method Dispatch
+When a program is running, the JVM determines which method to call based on the object type, not the reference type.This is called dynamic method dispatch.
+Reference type determines which methods we can access,but object type determines which method will be called.
+Shapes s = new Circle();
+s.draw(); //draw method of Circle class will be called
+
+We can use final keyword to prevent method overriding.
+Early binding
+When a method is called at compile time, it is called early binding.(in final methods)
+Early binding is faster than late binding because it doesn't have to check which method to call at runtime.
+Late binding
+When a method is called at runtime, it is called late binding.(in non final/overridden methods)
+Late binding has an extra overhead of checking which method to call at runtime.
+
+Encapsulation
+It means wrapping the data and methods in a class.
+
+Abstraction
+It means hiding the implementation details and showing only the functionality to the user.
+
+Abstraction can be achieved using abstract classes and interfaces.
+
+Encapsulation can be achieved using access modifiers.
+
+Abstraction focuses on the external stuff,while Encapsulation focuses on the internal stuff.
+
+Main difference between encapsulation and abstraction is that abstraction is a design level concept while encapsulation is a implementation level concept.
+Abstraction is focused on data security while encapsulation is focused on hiding complexity.

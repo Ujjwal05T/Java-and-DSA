@@ -38,7 +38,7 @@ public class Generics {
         list.add(9);
         list.add(20);
         list.add(30);
-        list.remove();
+//        list.remove();
         System.out.println(list);
 
     }

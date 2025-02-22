@@ -1,0 +1,64 @@
+Class name starts by capital letter by convention.
+
+Class is named group of properties and functions.
+It is like a template/blueprint for objects.
+
+Object is an instance of the class.(instance can be referred as physical stuff)
+
+Objects actually occupies space in memory.
+
+All variables inside the object are called instance variables.
+
+A variable pointing to object is called reference variable.
+List list = new List();
+here list is reference variable.
+
+New keyword is used to create object.It dynamically allocates memory at the runtime for the object.
+Object is created in heap memory.
+
+Constructor is a special method/function which is called when object is created.
+Constructor doesn't have return type.
+Default constructor has no values/arguments.
+Constructor is used to initialize instance variables.
+
+This keyword is used to refer current object.It is used to access object inside the class.
+
+We can have multiple constructors with different parameters.
+This is called constructor overloading.
+
+We can also call one constructor from another constructor using this keyword.
+This is called constructor chaining.
+something like this - this (arguments)
+
+Wrapper class is a class which is used to convert primitive data types to objects.
+Integer, Double, Character, Boolean are wrapper classes for int, double, char, boolean respectively.
+Integer num = new Integer(10);
+Integer num = 10; (autoboxing)
+we can access various methods of Integer class using num object.
+Autoboxing is the process of converting primitive data types to objects.
+
+Final keyword
+We can not update the value of final variable,it should always be initialised while declaring.(primitive data types)
+Final class can not be inherited.
+If a class is declared as final then we all its methods are also final.
+Final object can not be reassigned to another object.
+Final method can not be overridden.
+
+Garbage Collection happens automatically.
+We cannot remove objects manually,but we can specify something to do when objects are being removed using finalise method.
+
+Package is a collection of classes.Basically a folder containing classes.
+
+Static keyword is used to access class members without creating object of the class.
+Static variables are shared by all objects of the class.
+Static methods can be accessed without creating object of the class.
+Accessing static members using class name is a good practice.
+Static methods can not access non-static members directly without object.
+static methods can be inherited but can not be overridden.Overriding depends on objects but static methods does not depend on objects so they can not be overridden.
+
+public static void main(String args[]) is the entry point of the program.
+Main method is static because it can be called without creating object of the class.
+Inside static method we can not access instance variables directly.Hence we need to create object of the class to access instance variables.
+We can not use this keyword inside static method.
+
+static methods and variables are resolved during compile time.
