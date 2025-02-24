@@ -48,6 +48,15 @@ Garbage Collection happens automatically.
 We cannot remove objects manually,but we can specify something to do when objects are being removed using finalise method.
 
 Package is a collection of classes.Basically a folder containing classes.
+We can create user defined packages.
+We can import classes from other packages using import keyword.
+In-built packages:
+java.lang:contains all the classes in this package are automatically imported;all the basic stuff that is language specific like primitive data types.
+java.util:contains all the utility classes like collections, date and time etc.
+java.io:contains all the classes for input and output operations like buffer reader, file reader etc.
+java.net:contains all the classes for networking.
+java.awt:contains all the classes for GUI (not in use).
+java.applet:contains all the classes for applets (not in use).
 
 Static keyword is used to access class members without creating object of the class.
 Static variables are shared by all objects of the class.
@@ -62,3 +71,6 @@ Inside static method we can not access instance variables directly.Hence we need
 We can not use this keyword inside static method.
 
 static methods and variables are resolved during compile time.
+
+Object Class
+This is the parent class of all classes in java.

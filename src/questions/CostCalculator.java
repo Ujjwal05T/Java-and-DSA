@@ -1,4 +1,4 @@
-package random;
+package questions;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -68,7 +68,7 @@ public class CostCalculator {
             }
         System.out.println("List of item and price :");
         for (int j = 0; j < a.name.size() ; j++) {
-            System.out.printf(" Name : %s \n Price per item : %d \n Type : %s \n Tax : %.2f \n Final Price : %.2f ",a.name.get(j),
+            System.out.printf(" \nName : %s \n Price per item : %d \n Type : %s \n Tax : %.2f \n Final Price : %.2f ",a.name.get(j),
                     a.price.get(j),a.type.get(j),a.tax.get(j),a.Fprice.get(j));
         }
     }

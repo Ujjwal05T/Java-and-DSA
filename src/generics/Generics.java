@@ -1,4 +1,4 @@
-package com.company;
+package generics;
 
 import java.util.Arrays;
 //Generics are used for type safety ,
@@ -25,11 +25,25 @@ class CustomArrayList<T> {
     }
     public T remove(){
          T removed =(T)(arr[--size]);
+         arr[size]=null;
          return removed;
+    }
+    public T get(int index){
+        return (T)arr[index];
+    }
+    public void set(int index,T value){
+        arr[index]=value;
+    }
+    public int size(){
+        return size;
     }
     @Override
     public String toString() {
-        return Arrays.toString(arr);
+        Object [] temp = new Object[size];
+        for(int i=0;i<size;i++){
+            temp[i]=arr[i];
+        }
+        return Arrays.toString(temp);
     }
 }
 public class Generics {

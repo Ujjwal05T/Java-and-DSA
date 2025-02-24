@@ -3,7 +3,7 @@ package arrays;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ArrayListEx {
+public class ArrayListExample {
     public static void main(String[] args) {
         //Arraylist is used to create an array when we don't know how many elements it will have
         //Below is syntax to create arraylist

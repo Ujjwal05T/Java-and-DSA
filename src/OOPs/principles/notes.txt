@@ -39,6 +39,7 @@ Example: Constructor overloading
 Method Overriding
 When a child class has the same method as parent class, it is called method overriding.
 When we override a method, we can use super keyword to call the parent class method.
+Overridden method must have same or better access modifier than parent class method.
 
 Dynamic Method Dispatch
 When a program is running, the JVM determines which method to call based on the object type, not the reference type.This is called dynamic method dispatch.
@@ -57,8 +58,38 @@ Late binding has an extra overhead of checking which method to call at runtime.
 Encapsulation
 It means wrapping the data and methods in a class.
 
+Access Modifiers
+public = access anywhere
+private = access only within the class
+default = access within same package
+protected = access within class,package and only subclass in different package
+
+private variable can be accessed by getters and setters.
+
+
 Abstraction
 It means hiding the implementation details and showing only the functionality to the user.
+If we want to declare a method and not define it, we can use abstract keyword.
+Benefit of it is we have to implement the method in child class.
+If any method is declared as abstract, the class must also be declared as abstract.
+All Child class must implement all the abstract methods of parent class.
+Use case is when we want to provide a template for child classes.And this looks much cleaner.
+We can't create an object of abstract class.
+We can't create static abstract methods.
+We can't have final abstract methods or class.
+
+Interfaces
+All variables in an interface are public, static and final by default.
+All methods in an interface are abstract by default.
+We can't use static methods and constructor in an interface.
+We can't create object of an interface.
+Here we use implements keyword to implement an interface.
+We can implement multiple interfaces in a class.
+Interfaces are used to achieve multiple inheritance.
+We can also inherit an interface from another interface.
+Annotation like @Override is also interface.
+static interface methods should always have a body.
+Starting from Java 8, we can have default implementation of methods in an interface using default cases.
 
 Abstraction can be achieved using abstract classes and interfaces.
 

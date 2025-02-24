@@ -1,4 +1,4 @@
-package random;
+package questions;
 
 import java.util.Arrays;
 
