@@ -11,7 +11,7 @@ We can also use our own classes as type arguments.
 
 Comparable Interface
 The Comparable interface is used to compare two objects of the same type.
-It is a interface with generic type.
+It is an interface with generic type.
 It has a single method compareTo(T o) which compares the current object with the specified object.
 It returns a negative integer, zero, or a positive integer as the current object is less than, equal to, or greater than the specified object.
 

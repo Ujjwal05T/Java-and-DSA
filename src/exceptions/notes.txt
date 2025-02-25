@@ -1,0 +1,25 @@
+Exception vs Error
+Error is unrecoverable,program can not handle it.
+Exception is recoverable,program can handle it.
+Exception prevents the normal flow of the program.
+We can check for exceptions and program can handle them.
+We can use try-catch block to handle exceptions.
+
+Throwable class is used for handling exceptions and errors.
+It is the superclass of all errors and exceptions in Java.
+It has two subclasses: Error and Exception.
+
+Exceptions are of two types: checked and unchecked.
+Checked exceptions are checked at compile time.
+Unchecked exceptions are checked at runtime.
+
+We use try catch block to handle exceptions.
+We can use multiple catch blocks to handle different types of exceptions.
+We can use finally block to execute code after try-catch block.
+Finally block is always executed whether exception is handled or not.
+
+Throws keyword is used to declare an exception.
+Throw keyword is used to throw an exception.
+We can also pass a message with exception.
+
+We can create our own exceptions by extending Exception class.

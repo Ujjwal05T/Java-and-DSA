@@ -1,0 +1,16 @@
+We can copy the objects using copy constructor.
+But it takes more processing time due to new keyword.
+
+So we can use clone method of Object class.
+We must implement Cloneable interface in the class whose object we want to clone.
+If we do not implement cloneable interface than JVM will throw CloneNotSupportedException.
+And also override clone() method which throws CloneNotSupportedException.
+This creates a shallow copy.
+
+Shallow Copy
+It creates copy for primitive type variables but non-primitive point to same reference as first object.
+This is not pure copy.
+
+Deep Copy
+It creates copy of both primitive data types and objects.
+
