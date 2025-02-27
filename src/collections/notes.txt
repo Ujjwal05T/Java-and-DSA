@@ -1,0 +1,23 @@
+Collection Framework
+It is set of classes and interfaces of data structures.
+Before this the data structures had some common use cases and operations like insertion, deletion, searching, etc.
+So we created a framework/interface which has some common operations/methods and we can implement them in our own way.
+This provides abstraction.
+This is provided in java util package.
+
+For example, we can implement a list in array list or linked list.
+
+List,Set,Queue extends Collection interface.
+List interface is implemented by ArrayList, LinkedList, Vector Class. Stack extends Vector.
+Refer to diagram for more detailed description on Set,Queue,Map etc.
+
+ArrayList and LinkedList are two different implementations of List interface.
+Each has different use cases but common methods that are implemented accordingly.
+for example size method in array list is O(1) but in linked list it is O(n).
+We can use List interface to refer to any of these classes.
+
+Vector is similar to array list , but it is synchronized.
+It means only 1 thread can access it at a time.
+While ArrayList is not synchronized, it can be accessed by multiple threads at a time.
+If we are not dealing with multithreaded application/program then we should use array list because it is faster.
+
