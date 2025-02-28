@@ -2,8 +2,14 @@ When a function is recursively calls itself then this function is called recursi
 
 We have to put a condition where recursion stops.This condition is called base condition.
 
-Every time recursive function calls itself it will take memory in stack memory.
+Function Call Working -
+All function calls are stored in stack memory.
+main function is also stored in stack memory.
+While the function is executing, the function is stored in stack memory.
+main function is at the bottom of stack memory.Then comes the function which is executing and then comes the function which is called by the function which is executing.
+After the function is executed, it is removed from stack memory.In the end main function is executed and removed from stack memory.
 
+Every time recursive function calls itself it will take memory in stack memory.
 If we do not put base condition then function will run infinitely and will give stack overflow error.
 
 Why Recursion ?
@@ -11,10 +17,26 @@ Why Recursion ?
 => It helps us in solving bigger problems in simpler way.We can convert recursive solution to iterative solution and vice versa.
    It helps in breaking down bigger problems into smaller problems.
 
+Space complexity is not constant in recursion.
+We can visualize recursion in tree form.
 
 When we write recursion in the formula it is called recurrence relation.
 
-The base condition is represented by answers we already know.
+The base condition is represented by answers we already know.Example - factorial 0! = 1 and 1! = 1;fibonacci 0 = 0 and 1 = 1.
 
 When last step in a function is recursive call then it is called tail recursion.
+Last step should be recursive call and there should be no other operation after that.Example - return factorial(n-1) * n is not tail recursion.
+
+How to understand and approach recursion problems ?
+Identify if we can break down problem into smaller problems.
+Identify base condition.
+Write recurrence relation.
+Draw recursion tree.
+See flow of execution in tree.
+Use pen and paper in beginning or you will be confused.
+
+Working with variables in recursion
+1. Arguments - Variables that are useful in recursive calls should be passed as arguments.Example in binary search - start,end in arguments but not mid.
+2. Body variables - Variable that are only used in function itself should be declared in body of function.Example - mid in binary search.
+3. Return Type - If function has a return type then we should return recursive call.
 

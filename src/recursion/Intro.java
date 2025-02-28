@@ -10,6 +10,7 @@ public class Intro {
         if(n>=5){
             return;
         }
+        //tail recursion
         print(n+1);   //recursive call
     }
 }
