@@ -1,0 +1,48 @@
+Time complexity is a function that tells us how the time is going to grow as the input grows(Time vs Input graph).
+Time Complexity != Time Taken
+
+What do we consider when thinking about time complexity ?
+- Always look for worst case.
+- Always look at complexity for large data.
+- Ignore constants.
+- Ignore less dominating terms.
+
+Big-O Notation O(N^3)
+This means N^3 is in upper bound; It may be solved in O(1),O(N) or any other time complexity but not exceed N^3.
+Worst case.
+
+Big Omega Notation
+This is opposite of Big-O. N^3 will be in lower bound ; It will take at least N^3 or more time but not lower than it.
+Best case.
+
+Big Theta Notation
+This is combination of above Notations. Upper Bound will be equal to lower bound.
+
+For general knowledge only
+Little o Notation
+This also gives upper bound but not strict upper bound.It is stronger statement.
+little o of N^3 means time complexity is always less than N^3.In Big O it is less than equal to N^3.
+Strictly less than N^3.
+
+Little omega Notation
+This also gives lower bound but not strict lower bound.It is stronger statement.
+little omega of N^3 means time complexity is always greater than N^3.In Big Omega it is greater than equal to N^3.
+Strictly greater than N^3.
+
+Space Complexity
+It is equal to input space + auxiliary space.
+Auxiliary space is the extra/temporary space taken by the algorithm to solve the problem.
+
+Recursive Algorithms Complexity
+Space complexity in recursive programs is not constant.
+Auxiliary space equals to height of recursive tree.
+
+2 types of recurrence relations -
+1. Linear
+2. Divide and Conquer
+
+Linear : We can solve using Substitution Method or Recursion Tree Method or Master Theorem
+Divide and Conquer : We can solve using Akra Bazzi Theoram
+
+
+
