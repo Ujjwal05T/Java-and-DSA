@@ -41,8 +41,9 @@ Auxiliary space equals to height of recursive tree.
 1. Linear
 2. Divide and Conquer
 
-Linear : We can solve using Substitution Method or Recursion Tree Method or Master Theorem
+Linear : We can solve using Characteristic equation 
 Divide and Conquer : We can solve using Akra Bazzi Theoram
+Examples - `link to notes here`
 
 
 

@@ -1,0 +1,64 @@
+Number System
+Binary numbers are numbers that are represented in base 2, using only 0s and 1s.This is the number system used by computers.
+Decimal numbers are used in our day to day life which are represented in base 10, using 0-9.
+Octal numbers are numbers that are represented in base 8, using 0-7.
+Hexadecimal numbers are numbers that are represented in base 16, using 0-9 and A-F.
+
+Conversion of numbers
+decimal to base b : keep dividing by b and store the remainder in reverse order
+base b to decimal : multiply each digit by b^(position of digit) and add them up
+
+Bit Manipulation
+
+Bitwise Operators:
+Bitwise operators are used to perform operations on binary numbers at the bit level.
+
+AND Operator (&)
+The AND operator compares each bit of two binary numbers and returns 1 if both bits are 1, otherwise it returns 0.
+Example:
+a   b   a&b
+1 & 1 = 1
+1 & 0 = 0
+0 & 1 = 0
+0 & 0 = 0
+
+OR Operator (|)
+The OR operator compares each bit of two binary numbers and returns 1 if at least one of the bits is 1, otherwise it returns 0.
+Example:
+a   b   a|b
+1 | 1 = 1
+1 | 0 = 1
+0 | 1 = 1
+0 | 0 = 0
+
+XOR Operator (^)
+The XOR operator compares each bit of two binary numbers and returns 1 if the bits are different, otherwise it returns 0.(only on should be true)
+Example:
+a   b   a^b
+1 ^ 1 = 0
+1 ^ 0 = 1
+0 ^ 1 = 1
+0 ^ 0 = 0
+
+Observation a ^ 1 = ~a , a ^ 0 = a ,a ^ a = 0
+
+NOT Operator (~)
+The NOT operator inverts the bits of a binary number, changing 1s to 0s and 0s to 1s.
+Example:
+a   ~a
+1   0
+0   1
+
+Left Shift Operator (<<)
+The left shift operator shifts the bits of a binary number to the left by a specified number of positions, filling the rightmost bits with 0s.
+Example:
+10 << 1 = 20
+(1010 << 1 = 10100) (shifted 1010 to left  by 1 position and added 0 in rightmost position)
+Observation - a << 1  = a * 2 , a << 2 = a * 4 , a << n = a * 2^n
+
+Right Shift Operator (>>)
+The right shift operator shifts the bits of a binary number to the right by a specified number of positions, discarding the rightmost bits.
+Example:
+10 >> 1 = 5
+(1010 >> 1 = 0101) (shifted 1010 to right by 1 position and discarded rightmost bit)
+Observation - a >> 1 = a / 2 , a >> 2 = a / 4 , a >> n = a / 2^n
